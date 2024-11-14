@@ -59,13 +59,6 @@ class TestTone(unittest.TestCase):
             current_tone = Tone(tone)
             self.assertEqual(current_tone.tone, tone)
 
-    """Test for my solution."""
-
-    # def test_init_with_invalid_tones(self):
-    #     with self.assertRaises(ValueError) as context:
-    #         Tone("H")
-    #     self.assertIn(f'{INPUT_ERROR_MESSAGE} one of {VALID_TONES}', str(context.exception))
-
     def test_tone_str(self):
         for index, tone in enumerate(self.tones):
             self.assertEqual(str(tone), VALID_TONES[index])
